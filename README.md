@@ -6,8 +6,7 @@ that responds to any inquiries posted by students on the college,
 courses, location, cost, and other topics. Machine learning 
 techniques are used in the construction of the College Enquiry 
 Chatbot project to evaluate user queries and comprehend user 
-messages. The web application that answers the question is called 
-This System. All one needs to do is submit a question using the bot.
+messages. All one needs to do is submit a question using the bot.
 
 The responses match the questions posed by the user. Through the 
 system, the User can inquire about any activity related to college. 
