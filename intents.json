@@ -431,7 +431,7 @@
                 "how many libraries"
             ],
             "responses": [
-                "There is one huge and spacious library.timings are 8am to 6pm and for more visit <a target=\"blank\" href=\"ADD LIBRARY DETAIL LINK\" rel=\"noopener noreferrer\">here</a>"
+                "There is one huge and spacious library in the college. The timings are 8 : 45 am to 5 : 30 pm and for more visit : <a target=\"blank\" href=\"https://www.mmcoe.edu.in/index.php/campus/library\" rel=\"noopener noreferrer\">library info</a>"
             ],
             "context_set": ""
         },
@@ -553,21 +553,6 @@
             ],
             "responses": [
                 "The principal of our college is Dr. V. N. Ghohokar"
-            ],
-            "context_set": ""
-        },
-        {
-            "tag": "admission",
-            "patterns": [
-                "what is the process of admission",
-                "what is the admission process",
-                "How to take admission in your college",
-                "What is the process for admission",
-                "admission",
-                "admission process"
-            ],
-            "responses": [
-                "Application can also be submitted online through the Unversity's  <a target=\"_blank\" href=\"LINK OF ADMISSION DOCUMENT\" rel=\"noopener noreferrer\">website</a>"
             ],
             "context_set": ""
         },
@@ -721,7 +706,7 @@
                 "okay"
             ],
             "responses": [
-                "I am glad I helped you",
+                "I am glad I helped you, what else you want to know?",
                 "welcome, anything else i can assist you with?"
             ],
             "context_set": ""
