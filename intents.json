@@ -781,6 +781,22 @@
                 "For MMCOE, Pune UG admissions candidates must have passed class 12th with at least 50% marks from a recognised board also valid score in JEE Main, MHT CET conducted by NTA and State Common Entrance Test Cell - Maharashtra State respectively.<br> Here are the individual cutoff list of each branch : <br> BE Mechcanical - 53.82 <br> BE Electrical - 58.71 <br> BE ENTC -93.89 <br> BE IT - 96.45 <br> BE Computer - 97.18 <br> BE AIDS - 95.56"
             ],
             "context_set": ""
+        },
+        {
+            "tag": "Steps to complete the admission",
+            "patterns": [
+                "steps",
+                "admission steps",
+                "what are the steps of admission process",
+                "admission process",
+                "step by step admission procedure",
+                "admission flowchart",
+                "admission procedure" 
+            ],
+            "responses": [
+                "Following are the steps for admission procedure : <br>Step  1 - registration of student(FMCIII Entrance) <br>Step  2 - seat acceptance confirmation & admission form filling through ERP portal(MB205) <br>Step  3 - scrutiny & verification of documents(MB207) <br>Step  4 - fee payment through ERP portal(MB207) <br>Step  5 - online admission confirmation(MB207) <br>Step  6 - submission of documents(MB207) <br>Step  7 - allotment of CPRN(MB207) <br>Step  8 - I-card & welcome kit collection(MB207) <br>Step  9 - hostel accommodation for girls/boys(if required)(MB207) <br>Step 10 - join branchwise whatsapp group"
+            ],
+            "context_set": ""
         }
     ]
 }
