@@ -7,10 +7,11 @@ import tensorflow as tf
 import nltk
 from nltk.stem import WordNetLemmatizer
 
+nltk.download('punkt_tab')
+
 lemmatizer = WordNetLemmatizer()
 
-intents = json.loads(open('C:\\Users\\prathmesh\\OneDrive\\Desktop\\Codes\\Admission_Enquiry_Chatbot\\intents.json').read())
-
+intents = json.loads(open('C:\\Codes\\Admission_Enquiry_Chatbot\\intents.json').read())
 
 words = []
 classes = []
