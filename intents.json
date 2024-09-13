@@ -520,7 +520,8 @@
                 "Who is computer HOD",
                 "Where is computer HOD",
                 "computer hod",
-                "name of computer hod"
+                "name of computer hod",
+                "HOD of computer dept"
             ],
             "responses": [
                 "The HOD of CS department is Dr. Kalpana Thakre"
