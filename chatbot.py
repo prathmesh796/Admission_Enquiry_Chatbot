@@ -3,18 +3,19 @@ import json
 import pickle
 import numpy as np
 import nltk
-import requests
+import os
 
 from nltk.stem import WordNetLemmatizer
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 
 lemmatizer = WordNetLemmatizer()
-intents = json.loads(open('C:\\Codes\\Admission_Enquiry_Chatbot\\intents.json').read())
 
-words = pickle.load(open('words.pkl', 'rb'))
-classes = pickle.load(open('classes.pkl', 'rb'))
-model = load_model('chatbot_model.h5')
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
+intents = json.loads(open(os.path.join(BASE_DIR, "intents.json")).read())
+words = pickle.load(open(os.path.join(BASE_DIR, "words.pkl"), "rb"))
+classes = pickle.load(open(os.path.join(BASE_DIR, "classes.pkl"), "rb"))
+model = load_model(os.path.join(BASE_DIR, "chatbot_model.h5"))
 
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
@@ -61,7 +62,7 @@ def chatbot_response(msg):
     return res
 
 #flask app
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -75,4 +76,4 @@ def get_bot_response():
         return chatbot_response(key)
 
 if __name__ == "__main__":
-    app.run(host='127.0.0.1', port=5000, debug = True)
+    app.run(host="0.0.0.0", port=5000)
