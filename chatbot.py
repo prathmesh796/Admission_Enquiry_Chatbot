@@ -12,10 +12,10 @@ lemmatizer = WordNetLemmatizer()
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-intents = json.loads(open(os.path.join(BASE_DIR, "intents.json")).read())
-words = pickle.load(open(os.path.join(BASE_DIR, "words.pkl"), "rb"))
-classes = pickle.load(open(os.path.join(BASE_DIR, "classes.pkl"), "rb"))
-model = load_model(os.path.join(BASE_DIR, "chatbot_model.h5"))
+intents = json.loads(open(os.path.join(BASE_DIR, "/data/intents.json")).read())
+words = pickle.load(open(os.path.join(BASE_DIR, "models/words.pkl"), "rb"))
+classes = pickle.load(open(os.path.join(BASE_DIR, "models/classes.pkl"), "rb"))
+model = load_model(os.path.join(BASE_DIR, "models/chatbot_model.h5"))
 
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
