@@ -3,6 +3,7 @@ import json
 import pickle
 import numpy as np
 import os
+
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 import tensorflow as tf
 
@@ -14,7 +15,9 @@ nltk.download('punkt_tab')
 
 lemmatizer = WordNetLemmatizer()
 
-intents = json.loads(open('C:\\Codes\\Admission_Enquiry_Chatbot\\intents.json').read())
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+intents = json.loads(open(os.path.join(BASE_DIR, "/data/intents.json")).read())
 
 words = []
 classes = []
