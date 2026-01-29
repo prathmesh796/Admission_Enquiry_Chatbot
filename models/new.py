@@ -17,7 +17,7 @@ lemmatizer = WordNetLemmatizer()
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-intents = json.loads(open(os.path.join(BASE_DIR, "/data/intents.json")).read())
+intents = json.loads(open(os.path.join(BASE_DIR, "/Codes/Admission_Enquiry_Chatbot/data/intents.json")).read())
 
 words = []
 classes = []
